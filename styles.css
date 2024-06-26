@@ -72,3 +72,40 @@ header, footer {
         width: auto; 
     }
 }
+.one {
+    display: flex;
+    flex-direction: row;
+    flex: auto; 
+}
+
+.two {
+    flex: 2; 
+    overflow-y: auto; 
+    padding: 20px; 
+}
+
+.three{
+    flex: 1; 
+    overflow-y: auto; 
+    padding: 20px; 
+}
+
+
+.works_on_smartphone_1 , .four {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body.works_on_smartphone_1 {
+        
+        flex-direction: column; 
+    }
+
+    article, aside {
+        flex: auto; 
+        width: auto; 
+    }
+}
